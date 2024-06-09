@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  max-width: 375px;
+  height: 125px;
+  background-color: purple;
+}
+header .green-header {
+  height: 55px;
+  background-color: #0C4B35;
+}
+header .white-header {
+  height: 55px;
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */

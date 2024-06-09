@@ -1,0 +1,30 @@
+@import "_variables.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+// mobile
+// @media (min-width: 320px) {
+
+header {
+    max-width: 375px;
+    height: 125px;
+    background-color: purple;
+
+   .green-header {
+    height: 55px;
+    background-color: $main3green;
+    }
+
+    .white-header {
+    height: 55px;
+    background-color: $iconColor-white;
+    }
+}
+// }
+
+// desktop
+// @media (min-width: 1200px) {
+
+// }
