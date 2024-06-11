@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 // mobile
-// @media (min-width: 320px) {
+@media (min-width: 320px) {
 
 header {
     max-width: 375px;
     height: 125px;
-    background-color: purple;
 
    .green-header {
     height: 55px;
@@ -22,9 +25,11 @@ header {
     background-color: $iconColor-white;
     }
 }
-// }
+}
 
 // desktop
-// @media (min-width: 1200px) {
-
-// }
+@media (min-width: 1200px) {
+header {
+    max-width: 100%;
+}
+}

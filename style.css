@@ -1,18 +1,27 @@
 * {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
 }
 
-header {
-  max-width: 375px;
-  height: 125px;
-  /* background-color: purple; */
+@media (min-width: 320px) {
+  header {
+    max-width: 375px;
+    height: 125px;
+  }
+  header .green-header {
+    height: 55px;
+    background-color: #0C4B35;
+  }
+  header .white-header {
+    height: 55px;
+    background-color: #fff;
+  }
 }
-header .green-header {
-  height: 55px;
-  background-color: #0C4B35;
-}
-header .white-header {
-  height: 55px;
-  background-color: #fff;
+@media (min-width: 1200px) {
+  header {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
