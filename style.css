@@ -13,7 +13,24 @@ body {
   }
   header .green-header {
     height: 55px;
+    padding: 20px;
     background-color: #0C4B35;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .green-header .contacts {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .green-header .lang {
+    width: 52px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
   }
   header .white-header {
     height: 55px;
