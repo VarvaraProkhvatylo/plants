@@ -8,8 +8,9 @@ body {
     margin: 0;
 }
 
+
 // mobile
-@media (min-width: 320px) {
+// @media (max-width: 375px) {
 
 header {
     max-width: 375px;
@@ -19,36 +20,107 @@ header {
     height: 55px;
     padding: 20px;
     background-color: $main3green;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+
+    .green-wrap {  
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
     .contacts {
         width: 100px;
         height: 20px;
         display: flex;
         justify-content: space-between;
+
+        .no-display {
+        display: none;
+        @media only screen {
+            max-width: 375px;
+        }  
+        }
     }
 
     .lang {
         width: 52px;
         display: flex;
-        flex-direction: row;
         color: $iconColor-white;
     }
+}
     }
 
     .white-header {
     height: 55px;
     background-color: $iconColor-white;
+    padding: 15px;
+    align-items: center;
+
+    .white-wrap {
+        display: flex;
+        justify-content: space-between;
+
+    .header-logo {
+        width: 90px;
+        height: 40px;
+    }
+
+    .call-and-menu {
+        width: 110px;
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
     }
 }
+    }
 }
+// }
 
 // desktop
 @media (min-width: 1200px) {
-header {
-    max-width: 100%;
-}
-}
+    header {
+        max-width: 100%;
+    
+        .green-header {
+    
+            .green-wrap {
+            width: 1420px;
+            margin: 0 auto;
+    
+            .contacts {
+                width: 740px;
+                color: $iconColor-white;
+                font-size: 14px;
+
+                .no-display {
+                    display:block;
+                    padding-left: 10px;
+
+                    @media only screen {
+                        max-width: 375px;
+                    }  
+                    }
+                
+                .email {
+                    width: 281px;
+                    display: inline-flex;
+                }
+                .phone {
+                    width: 130px;
+                    display: inline-flex;
+                }
+                .location {
+                    width: 268px;
+                    display: inline-flex;
+                }
+            }
+            }
+        }
+    
+        .white-header {
+    
+            .white-wrap {
+            width: 1420px;
+            margin: 0 auto;    
+            }
+        }
+    }
+    }

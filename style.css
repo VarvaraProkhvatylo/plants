@@ -6,39 +6,98 @@ body {
   margin: 0;
 }
 
-@media (min-width: 320px) {
-  header {
+header {
+  max-width: 375px;
+  height: 125px;
+}
+header .green-header {
+  height: 55px;
+  padding: 20px;
+  background-color: #0C4B35;
+}
+header .green-header .green-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .green-header .green-wrap .contacts {
+  width: 100px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header .green-header .green-wrap .contacts .no-display {
+  display: none;
+}
+@media only screen {
+  header .green-header .green-wrap .contacts .no-display {
     max-width: 375px;
-    height: 125px;
-  }
-  header .green-header {
-    height: 55px;
-    padding: 20px;
-    background-color: #0C4B35;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header .green-header .contacts {
-    width: 100px;
-    height: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  header .green-header .lang {
-    width: 52px;
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-  }
-  header .white-header {
-    height: 55px;
-    background-color: #fff;
   }
 }
+header .green-header .green-wrap .lang {
+  width: 52px;
+  display: flex;
+  color: #fff;
+}
+header .white-header {
+  height: 55px;
+  background-color: #fff;
+  padding: 15px;
+  align-items: center;
+}
+header .white-header .white-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+header .white-header .white-wrap .header-logo {
+  width: 90px;
+  height: 40px;
+}
+header .white-header .white-wrap .call-and-menu {
+  width: 110px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (min-width: 1200px) {
   header {
     max-width: 100%;
+  }
+  header .green-header .green-wrap {
+    width: 1420px;
+    margin: 0 auto;
+  }
+  header .green-header .green-wrap .contacts {
+    width: 740px;
+    color: #fff;
+    font-size: 14px;
+  }
+  header .green-header .green-wrap .contacts .no-display {
+    display: block;
+    padding-left: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header .green-header .green-wrap .contacts .no-display {
+    max-width: 375px;
+  }
+}
+@media (min-width: 1200px) {
+  header .green-header .green-wrap .contacts .email {
+    width: 281px;
+    display: inline-flex;
+  }
+  header .green-header .green-wrap .contacts .phone {
+    width: 130px;
+    display: inline-flex;
+  }
+  header .green-header .green-wrap .contacts .location {
+    width: 268px;
+    display: inline-flex;
+  }
+  header .white-header .white-wrap {
+    width: 1420px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */
