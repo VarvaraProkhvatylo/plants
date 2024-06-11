@@ -10,6 +10,14 @@ header {
   max-width: 375px;
   height: 125px;
 }
+header .no-display {
+  display: none;
+}
+@media only screen {
+  header .no-display {
+    max-width: 375px;
+  }
+}
 header .green-header {
   height: 55px;
   padding: 20px;
@@ -26,44 +34,56 @@ header .green-header .green-wrap .contacts {
   display: flex;
   justify-content: space-between;
 }
-header .green-header .green-wrap .contacts .no-display {
-  display: none;
-}
-@media only screen {
-  header .green-header .green-wrap .contacts .no-display {
-    max-width: 375px;
-  }
-}
 header .green-header .green-wrap .lang {
   width: 52px;
   display: flex;
   color: #fff;
 }
 header .white-header {
-  height: 55px;
+  height: 70px;
   background-color: #fff;
   padding: 15px;
-  align-items: center;
 }
 header .white-header .white-wrap {
+  height: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header .white-header .white-wrap .header-logo {
   width: 90px;
   height: 40px;
 }
 header .white-header .white-wrap .call-and-menu {
-  width: 110px;
   height: 35px;
   display: flex;
-  justify-content: space-between;
+}
+header .white-header .white-wrap .call-and-menu .call {
+  width: fit-content;
+  height: 34px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  background-color: #00730C;
+}
+header .white-header .white-wrap .call-and-menu .menu-hidden {
+  margin-left: 40px;
+  align-items: center;
 }
 
 @media (min-width: 1200px) {
   header {
     max-width: 100%;
   }
+  header .no-display {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header .no-display {
+    max-width: 375px;
+  }
+}
+@media (min-width: 1200px) {
   header .green-header .green-wrap {
     width: 1420px;
     margin: 0 auto;
@@ -73,17 +93,9 @@ header .white-header .white-wrap .call-and-menu {
     color: #fff;
     font-size: 14px;
   }
-  header .green-header .green-wrap .contacts .no-display {
-    display: block;
-    padding-left: 10px;
+  header .green-header .green-wrap .contacts img {
+    padding-right: 10px;
   }
-}
-@media only screen and (min-width: 1200px) {
-  header .green-header .green-wrap .contacts .no-display {
-    max-width: 375px;
-  }
-}
-@media (min-width: 1200px) {
   header .green-header .green-wrap .contacts .email {
     width: 281px;
     display: inline-flex;
@@ -99,5 +111,40 @@ header .white-header .white-wrap .call-and-menu {
   header .white-header .white-wrap {
     width: 1420px;
     margin: 0 auto;
+    align-items: center;
+  }
+  header .white-header .white-wrap .navigation {
+    width: 625px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  header .white-header .white-wrap .call-and-menu {
+    max-width: 900px;
+    color: #fff;
+  }
+  header .white-header .white-wrap .call-and-menu .call {
+    width: 170px;
+    height: 35px;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+  }
+  header .white-header .white-wrap .call-and-menu .call .no-display {
+    padding-left: 10px;
+  }
+  header .white-header .white-wrap .call-and-menu .menu-hidden {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header .white-header .white-wrap .call-and-menu .menu-hidden {
+    min-width: 376px;
   }
 }/*# sourceMappingURL=style.css.map */

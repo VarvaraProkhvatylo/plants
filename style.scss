@@ -9,12 +9,18 @@ body {
 }
 
 
-// mobile
-// @media (max-width: 375px) {
+// mobile (max-width: 375px)
 
 header {
     max-width: 375px;
     height: 125px;
+
+    .no-display {
+        display: none;
+        @media only screen {
+            max-width: 375px;
+        }  
+        }
 
    .green-header {
     height: 55px;
@@ -32,12 +38,7 @@ header {
         display: flex;
         justify-content: space-between;
 
-        .no-display {
-        display: none;
-        @media only screen {
-            max-width: 375px;
-        }  
-        }
+        
     }
 
     .lang {
@@ -49,14 +50,15 @@ header {
     }
 
     .white-header {
-    height: 55px;
+    height: 70px;
     background-color: $iconColor-white;
     padding: 15px;
-    align-items: center;
 
     .white-wrap {
+        height: 40px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
     .header-logo {
         width: 90px;
@@ -64,20 +66,43 @@ header {
     }
 
     .call-and-menu {
-        width: 110px;
+        // width: 110px;
         height: 35px;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+
+        .call {
+            // width: 110px;
+            width: fit-content;
+            height: 34px;
+            // height: fit-content;
+            padding: 7px 10px;
+            border-radius: 5px;
+            background-color: #00730C;
+        }
+
+        .menu-hidden {
+            margin-left: 40px;
+            align-items: center;
+        }
     }
 }
     }
 }
-// }
+
 
 // desktop
 @media (min-width: 1200px) {
     header {
         max-width: 100%;
+
+    .no-display {
+        display:block;
+        
+        @media only screen {
+            max-width: 375px;
+        }
+    }
     
         .green-header {
     
@@ -90,15 +115,8 @@ header {
                 color: $iconColor-white;
                 font-size: 14px;
 
-                .no-display {
-                    display:block;
-                    padding-left: 10px;
+                img {padding-right: 10px;}
 
-                    @media only screen {
-                        max-width: 375px;
-                    }  
-                    }
-                
                 .email {
                     width: 281px;
                     display: inline-flex;
@@ -116,11 +134,50 @@ header {
         }
     
         .white-header {
-    
+
             .white-wrap {
             width: 1420px;
-            margin: 0 auto;    
+            margin: 0 auto;
+            align-items: center;
+            
+            .navigation {
+                width: 625px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
             }
+
+         .call-and-menu {
+            max-width: 900px;
+            color: $iconColor-white;
+
+            .call {
+            width: 170px;
+            height: 35px;
+            // padding: 10px 35px;
+            border-radius: 5px;
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            font-size: 18px;
+
+            .no-display {
+                padding-left: 10px;
+            }
+            }
+
+            .menu-hidden {
+                display: none;
+                @media only screen {
+                    min-width: 376px;
+                }
+            }   
         }
     }
-    }
+}
+}
+}
