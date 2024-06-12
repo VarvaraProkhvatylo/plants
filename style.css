@@ -84,35 +84,45 @@ header .white-header .white-wrap .call-and-menu .menu-hidden {
   }
 }
 @media (min-width: 1200px) {
-  header .green-header .green-wrap {
+  header .green-header .content {
+    max-width: 1420px;
     justify-content: space-around;
     margin: 0 auto;
   }
-  header .green-header .green-wrap .contacts {
+  header .green-header .content .green-wrap {
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  header .green-header .content .green-wrap .contacts {
     width: 740px;
     color: #fff;
     font-size: 14px;
   }
-  header .green-header .green-wrap .contacts img {
+  header .green-header .content .green-wrap .contacts img {
     padding-right: 10px;
   }
-  header .green-header .green-wrap .contacts .email {
+  header .green-header .content .green-wrap .contacts .email {
     width: 281px;
     display: inline-flex;
   }
-  header .green-header .green-wrap .contacts .phone {
+  header .green-header .content .green-wrap .contacts .phone {
     width: 130px;
     display: inline-flex;
   }
-  header .green-header .green-wrap .contacts .location {
+  header .green-header .content .green-wrap .contacts .location {
     width: 268px;
     display: inline-flex;
   }
-  header .white-header .white-wrap {
+  header .white-header .content {
+    max-width: 1420px;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  header .white-header .content .white-wrap {
     display: flex;
     justify-content: space-around;
   }
-  header .white-header .white-wrap .navigation {
+  header .white-header .content .white-wrap .navigation {
     width: 625px;
     padding-right: 100px;
     display: flex;
@@ -122,10 +132,10 @@ header .white-header .white-wrap .call-and-menu .menu-hidden {
     font-weight: 700;
     line-height: 20px;
   }
-  header .white-header .white-wrap .call-and-menu {
+  header .white-header .content .white-wrap .call-and-menu {
     color: #fff;
   }
-  header .white-header .white-wrap .call-and-menu .call {
+  header .white-header .content .white-wrap .call-and-menu .call {
     width: 170px;
     height: 35px;
     border-radius: 5px;
@@ -135,15 +145,15 @@ header .white-header .white-wrap .call-and-menu .menu-hidden {
     align-items: center;
     font-size: 18px;
   }
-  header .white-header .white-wrap .call-and-menu .call .no-display {
+  header .white-header .content .white-wrap .call-and-menu .call .no-display {
     padding-left: 10px;
   }
-  header .white-header .white-wrap .call-and-menu .menu-hidden {
+  header .white-header .content .white-wrap .call-and-menu .menu-hidden {
     display: none;
   }
 }
 @media only screen and (min-width: 1200px) {
-  header .white-header .white-wrap .call-and-menu .menu-hidden {
+  header .white-header .content .white-wrap .call-and-menu .menu-hidden {
     min-width: 376px;
   }
 }/*# sourceMappingURL=style.css.map */
