@@ -36,9 +36,7 @@ header {
         width: 100px;
         height: 20px;
         display: flex;
-        justify-content: space-between;
-
-        
+        justify-content: space-between;   
     }
 
     .lang {
@@ -90,7 +88,6 @@ header {
     }
 }
 
-
 // desktop
 @media (min-width: 1200px) {
     header {
@@ -104,10 +101,13 @@ header {
         }
     }
     
+    // .content {
+        // max-width: 1420px;
+
         .green-header {
     
             .green-wrap {
-            width: 1420px;
+            justify-content: space-around;
             margin: 0 auto;
     
             .contacts {
@@ -136,12 +136,16 @@ header {
         .white-header {
 
             .white-wrap {
-            width: 1420px;
-            margin: 0 auto;
-            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            // margin: 0 auto;
+            // max-width: 1408px;
+            // justify-content: center;
+            // align-items: center;
             
             .navigation {
                 width: 625px;
+                padding-right: 100px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -151,13 +155,12 @@ header {
             }
 
          .call-and-menu {
-            max-width: 900px;
+            // max-width: 900px;
             color: $iconColor-white;
 
             .call {
             width: 170px;
             height: 35px;
-            // padding: 10px 35px;
             border-radius: 5px;
             display: inline-flex;
             justify-content: center;
@@ -179,5 +182,6 @@ header {
         }
     }
 }
+    // }
 }
 }

@@ -85,7 +85,7 @@ header .white-header .white-wrap .call-and-menu .menu-hidden {
 }
 @media (min-width: 1200px) {
   header .green-header .green-wrap {
-    width: 1420px;
+    justify-content: space-around;
     margin: 0 auto;
   }
   header .green-header .green-wrap .contacts {
@@ -109,12 +109,12 @@ header .white-header .white-wrap .call-and-menu .menu-hidden {
     display: inline-flex;
   }
   header .white-header .white-wrap {
-    width: 1420px;
-    margin: 0 auto;
-    align-items: center;
+    display: flex;
+    justify-content: space-around;
   }
   header .white-header .white-wrap .navigation {
     width: 625px;
+    padding-right: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,7 +123,6 @@ header .white-header .white-wrap .call-and-menu .menu-hidden {
     line-height: 20px;
   }
   header .white-header .white-wrap .call-and-menu {
-    max-width: 900px;
     color: #fff;
   }
   header .white-header .white-wrap .call-and-menu .call {
