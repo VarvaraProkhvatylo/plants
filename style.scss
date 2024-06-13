@@ -11,6 +11,14 @@ body {
 
 // mobile (max-width: 375px)
 
+.hero {
+    max-width: 375px;
+    max-height: fit-content;
+    // max-height: 720px;
+    background-image: url(images/hero-block\ BG\ mob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 header {
     max-width: 375px;
     height: 125px;
@@ -88,8 +96,118 @@ header {
     }
 }
 
+.hero-img {
+    max-width: 375px;
+    height: 240px;
+    background-image: url(images/hero-block\ img\ mob.png);
+}
+
+.content {
+    max-height: 420px;
+    font-family: Nunito;
+    padding: 0 15px;
+
+    .sub-header {
+    font-size: 14px;
+    font-weight: 700;
+    color: $typography-black;  
+    }
+
+    .header {
+        font-size: 28px;
+        font-weight: 700;
+        color: $typography-black; 
+    }
+
+    .paragraph {
+        font-size: 14px;
+        font-weight: 400;
+        color: $typography-black; 
+    }
+
+    .hero-btns {
+        max-width: 345px;
+        // max-height: 155px;
+        padding: 40px 0;
+        justify-content: space-around;
+
+        .last-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: space-around;    
+
+        .see-how {
+            width: 140px;
+            max-height: 155px;
+            height: 21px;
+            // padding-top: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: $main1green;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // img {
+            //     max-width: 16px;
+            //     max-height: 13px;
+            // }
+
+        .statistics {
+            display: flex;
+            flex-direction: row;
+            // max-width: fit-content;
+            width: 345px;
+            height: 118px;
+
+            .no-display {
+                display: none;
+                @media only screen {
+                    max-width: 375px;
+                }  
+                }
+
+            .customers, .garden {
+                width: 135px;
+                height: 32px;
+                background-color: #CBE5CE;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 25px;
+                padding: 10px;
+
+                .number {
+                    width: 29px;
+                    height: 16px;
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+
+                .name {
+                    max-width: 81px;
+                    height: 14px;
+                    font-size: 10px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+        }
+    }
+}
+}
+
 // desktop
 @media (min-width: 1200px) {
+    .hero {
+        max-width: 100%;
+        // max-height: 860px;
+        max-height: fit-content;
+        background-image: url(images/hero-block\ BG\ desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
     header {
         max-width: 100%;
 
@@ -159,7 +277,6 @@ header {
         }
 
         .call-and-menu {
-            // max-width: 900px;
             color: $iconColor-white;
 
             .call {
@@ -187,5 +304,12 @@ header {
     }
           }
         }
+}
+
+.hero-img {
+    max-width: 1013px;
+    height: 673px;
+    background-image: url(images/hero-block\ img\ desktop.png);
+}
 }
 }

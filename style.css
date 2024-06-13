@@ -6,123 +6,218 @@ body {
   margin: 0;
 }
 
-header {
+.hero {
+  max-width: 375px;
+  max-height: fit-content;
+  background-image: url(images/hero-block\ BG\ mob.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero header {
   max-width: 375px;
   height: 125px;
 }
-header .no-display {
+.hero header .no-display {
   display: none;
 }
 @media only screen {
-  header .no-display {
+  .hero header .no-display {
     max-width: 375px;
   }
 }
-header .green-header {
+.hero header .green-header {
   height: 55px;
   padding: 20px;
   background-color: #0C4B35;
 }
-header .green-header .green-wrap {
+.hero header .green-header .green-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .green-header .green-wrap .contacts {
+.hero header .green-header .green-wrap .contacts {
   width: 100px;
   height: 20px;
   display: flex;
   justify-content: space-between;
 }
-header .green-header .green-wrap .lang {
+.hero header .green-header .green-wrap .lang {
   width: 52px;
   display: flex;
   color: #fff;
 }
-header .white-header {
+.hero header .white-header {
   height: 70px;
   background-color: #fff;
   padding: 15px;
 }
-header .white-header .white-wrap {
+.hero header .white-header .white-wrap {
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .white-header .white-wrap .header-logo {
+.hero header .white-header .white-wrap .header-logo {
   width: 90px;
   height: 40px;
 }
-header .white-header .white-wrap .call-and-menu {
+.hero header .white-header .white-wrap .call-and-menu {
   height: 35px;
   display: flex;
 }
-header .white-header .white-wrap .call-and-menu .call {
+.hero header .white-header .white-wrap .call-and-menu .call {
   width: fit-content;
   height: 34px;
   padding: 7px 10px;
   border-radius: 5px;
   background-color: #00730C;
 }
-header .white-header .white-wrap .call-and-menu .menu-hidden {
+.hero header .white-header .white-wrap .call-and-menu .menu-hidden {
   margin-left: 40px;
   align-items: center;
 }
+.hero .hero-img {
+  max-width: 375px;
+  height: 240px;
+  background-image: url(images/hero-block\ img\ mob.png);
+}
+.hero .content {
+  max-height: 420px;
+  font-family: Nunito;
+  padding: 0 15px;
+}
+.hero .content .sub-header {
+  font-size: 14px;
+  font-weight: 700;
+  color: #212529;
+}
+.hero .content .header {
+  font-size: 28px;
+  font-weight: 700;
+  color: #212529;
+}
+.hero .content .paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  color: #212529;
+}
+.hero .content .hero-btns {
+  max-width: 345px;
+  padding: 40px 0;
+  justify-content: space-around;
+}
+.hero .content .hero-btns .last-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .content .hero-btns .last-block .see-how {
+  width: 140px;
+  max-height: 155px;
+  height: 21px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #00730C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .content .hero-btns .last-block .see-how .statistics {
+  display: flex;
+  flex-direction: row;
+  width: 345px;
+  height: 118px;
+}
+.hero .content .hero-btns .last-block .see-how .statistics .no-display {
+  display: none;
+}
+@media only screen {
+  .hero .content .hero-btns .last-block .see-how .statistics .no-display {
+    max-width: 375px;
+  }
+}
+.hero .content .hero-btns .last-block .see-how .statistics .customers, .hero .content .hero-btns .last-block .see-how .statistics .garden {
+  width: 135px;
+  height: 32px;
+  background-color: #CBE5CE;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 25px;
+  padding: 10px;
+}
+.hero .content .hero-btns .last-block .see-how .statistics .customers .number, .hero .content .hero-btns .last-block .see-how .statistics .garden .number {
+  width: 29px;
+  height: 16px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.hero .content .hero-btns .last-block .see-how .statistics .customers .name, .hero .content .hero-btns .last-block .see-how .statistics .garden .name {
+  max-width: 81px;
+  height: 14px;
+  font-size: 10px;
+  font-weight: 400;
+}
 
 @media (min-width: 1200px) {
-  header {
+  .hero {
+    max-width: 100%;
+    max-height: fit-content;
+    background-image: url(images/hero-block\ BG\ desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero header {
     max-width: 100%;
   }
-  header .no-display {
+  .hero header .no-display {
     display: block;
   }
 }
 @media only screen and (min-width: 1200px) {
-  header .no-display {
+  .hero header .no-display {
     max-width: 375px;
   }
 }
 @media (min-width: 1200px) {
-  header .green-header .content {
+  .hero header .green-header .content {
     max-width: 1420px;
     justify-content: space-around;
     margin: 0 auto;
   }
-  header .green-header .content .green-wrap {
+  .hero header .green-header .content .green-wrap {
     justify-content: space-around;
     margin: 0 auto;
   }
-  header .green-header .content .green-wrap .contacts {
+  .hero header .green-header .content .green-wrap .contacts {
     width: 740px;
     color: #fff;
     font-size: 14px;
   }
-  header .green-header .content .green-wrap .contacts img {
+  .hero header .green-header .content .green-wrap .contacts img {
     padding-right: 10px;
   }
-  header .green-header .content .green-wrap .contacts .email {
+  .hero header .green-header .content .green-wrap .contacts .email {
     width: 281px;
     display: inline-flex;
   }
-  header .green-header .content .green-wrap .contacts .phone {
+  .hero header .green-header .content .green-wrap .contacts .phone {
     width: 130px;
     display: inline-flex;
   }
-  header .green-header .content .green-wrap .contacts .location {
+  .hero header .green-header .content .green-wrap .contacts .location {
     width: 268px;
     display: inline-flex;
   }
-  header .white-header .content {
+  .hero header .white-header .content {
     max-width: 1420px;
     justify-content: space-around;
     margin: 0 auto;
   }
-  header .white-header .content .white-wrap {
+  .hero header .white-header .content .white-wrap {
     display: flex;
     justify-content: space-around;
   }
-  header .white-header .content .white-wrap .navigation {
+  .hero header .white-header .content .white-wrap .navigation {
     width: 625px;
     padding-right: 100px;
     display: flex;
@@ -132,10 +227,10 @@ header .white-header .white-wrap .call-and-menu .menu-hidden {
     font-weight: 700;
     line-height: 20px;
   }
-  header .white-header .content .white-wrap .call-and-menu {
+  .hero header .white-header .content .white-wrap .call-and-menu {
     color: #fff;
   }
-  header .white-header .content .white-wrap .call-and-menu .call {
+  .hero header .white-header .content .white-wrap .call-and-menu .call {
     width: 170px;
     height: 35px;
     border-radius: 5px;
@@ -145,15 +240,22 @@ header .white-header .white-wrap .call-and-menu .menu-hidden {
     align-items: center;
     font-size: 18px;
   }
-  header .white-header .content .white-wrap .call-and-menu .call .no-display {
+  .hero header .white-header .content .white-wrap .call-and-menu .call .no-display {
     padding-left: 10px;
   }
-  header .white-header .content .white-wrap .call-and-menu .menu-hidden {
+  .hero header .white-header .content .white-wrap .call-and-menu .menu-hidden {
     display: none;
   }
 }
 @media only screen and (min-width: 1200px) {
-  header .white-header .content .white-wrap .call-and-menu .menu-hidden {
+  .hero header .white-header .content .white-wrap .call-and-menu .menu-hidden {
     min-width: 376px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .hero-img {
+    max-width: 1013px;
+    height: 673px;
+    background-image: url(images/hero-block\ img\ desktop.png);
   }
 }/*# sourceMappingURL=style.css.map */
