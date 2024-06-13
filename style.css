@@ -13,10 +13,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .hero header {
   max-width: 375px;
   height: 125px;
 }
+
 .hero header .no-display {
   display: none;
 }
