@@ -102,10 +102,10 @@ header {
     background-image: url(images/hero-block\ img\ mob.png);
 }
 
-.content {
+.hero-content {
     max-height: 420px;
     font-family: Nunito;
-    padding: 0 15px;
+    padding: 45px 15px;
 
     .sub-header {
     font-size: 14px;
@@ -135,13 +135,14 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-top: 20px;
             // justify-content: space-around;    
 
         .see-how {
             width: 140px;
             max-height: 155px;
             height: 21px;
-            // padding-top: 20px;
+            padding-bottom: 40px;
             font-size: 14px;
             font-weight: 600;
             color: $main1green;
@@ -152,14 +153,15 @@ header {
             // img {
             //     max-width: 16px;
             //     max-height: 13px;
-            // }
+            }
 
         .statistics {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             // max-width: fit-content;
             width: 345px;
-            height: 118px;
+            height: fit-content;
 
             .no-display {
                 display: none;
@@ -180,15 +182,19 @@ header {
                 .number {
                     width: 29px;
                     height: 16px;
+                    font-family: Nunito;
                     font-size: 12px;
                     font-weight: 700;
+                    line-height: 16px;
                 }
 
                 .name {
                     max-width: 81px;
                     height: 14px;
+                    font-family: Nunito;
                     font-size: 10px;
                     font-weight: 400;
+                    line-height: 14px;
                 }
             }
         }
@@ -196,7 +202,7 @@ header {
         }
     }
 }
-}
+// }
 
 // desktop
 @media (min-width: 1200px) {

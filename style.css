@@ -81,40 +81,42 @@ body {
   height: 240px;
   background-image: url(images/hero-block\ img\ mob.png);
 }
-.hero .content {
+.hero .hero-content {
   max-height: 420px;
   font-family: Nunito;
-  padding: 0 15px;
+  padding: 45px 15px;
 }
-.hero .content .sub-header {
+.hero .hero-content .sub-header {
   font-size: 14px;
   font-weight: 700;
   color: #212529;
 }
-.hero .content .header {
+.hero .hero-content .header {
   font-size: 28px;
   font-weight: 700;
   color: #212529;
 }
-.hero .content .paragraph {
+.hero .hero-content .paragraph {
   font-size: 14px;
   font-weight: 400;
   color: #212529;
 }
-.hero .content .hero-btns {
+.hero .hero-content .hero-btns {
   max-width: 345px;
   padding: 40px 0;
   justify-content: space-around;
 }
-.hero .content .hero-btns .last-block {
+.hero .hero-content .hero-btns .last-block {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
 }
-.hero .content .hero-btns .last-block .see-how {
+.hero .hero-content .hero-btns .last-block .see-how {
   width: 140px;
   max-height: 155px;
   height: 21px;
+  padding-bottom: 40px;
   font-size: 14px;
   font-weight: 600;
   color: #00730C;
@@ -122,21 +124,22 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.hero .content .hero-btns .last-block .see-how .statistics {
+.hero .hero-content .hero-btns .last-block .statistics {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 345px;
-  height: 118px;
+  height: fit-content;
 }
-.hero .content .hero-btns .last-block .see-how .statistics .no-display {
+.hero .hero-content .hero-btns .last-block .statistics .no-display {
   display: none;
 }
 @media only screen {
-  .hero .content .hero-btns .last-block .see-how .statistics .no-display {
+  .hero .hero-content .hero-btns .last-block .statistics .no-display {
     max-width: 375px;
   }
 }
-.hero .content .hero-btns .last-block .see-how .statistics .customers, .hero .content .hero-btns .last-block .see-how .statistics .garden {
+.hero .hero-content .hero-btns .last-block .statistics .customers, .hero .hero-content .hero-btns .last-block .statistics .garden {
   width: 135px;
   height: 32px;
   background-color: #CBE5CE;
@@ -145,17 +148,21 @@ body {
   border-radius: 25px;
   padding: 10px;
 }
-.hero .content .hero-btns .last-block .see-how .statistics .customers .number, .hero .content .hero-btns .last-block .see-how .statistics .garden .number {
+.hero .hero-content .hero-btns .last-block .statistics .customers .number, .hero .hero-content .hero-btns .last-block .statistics .garden .number {
   width: 29px;
   height: 16px;
+  font-family: Nunito;
   font-size: 12px;
   font-weight: 700;
+  line-height: 16px;
 }
-.hero .content .hero-btns .last-block .see-how .statistics .customers .name, .hero .content .hero-btns .last-block .see-how .statistics .garden .name {
+.hero .hero-content .hero-btns .last-block .statistics .customers .name, .hero .hero-content .hero-btns .last-block .statistics .garden .name {
   max-width: 81px;
   height: 14px;
+  font-family: Nunito;
   font-size: 10px;
   font-weight: 400;
+  line-height: 14px;
 }
 
 @media (min-width: 1200px) {
