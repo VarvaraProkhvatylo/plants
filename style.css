@@ -13,12 +13,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .hero header {
   max-width: 375px;
   height: 125px;
 }
-
 .hero header .no-display {
   display: none;
 }
@@ -78,43 +76,46 @@ body {
   margin-left: 40px;
   align-items: center;
 }
-.hero .hero-img {
+.hero .all-hero {
+  max-width: 100%;
+}
+.hero .all-hero .hero-img {
   max-width: 375px;
   height: 240px;
   background-image: url(images/hero-block\ img\ mob.png);
 }
-.hero .hero-content {
+.hero .all-hero .hero-content {
   max-height: 420px;
   font-family: Nunito;
   padding: 45px 15px;
 }
-.hero .hero-content .sub-header {
+.hero .all-hero .hero-content .sub-header {
   font-size: 14px;
   font-weight: 700;
   color: #212529;
 }
-.hero .hero-content .header {
+.hero .all-hero .hero-content .header {
   font-size: 28px;
   font-weight: 700;
   color: #212529;
 }
-.hero .hero-content .paragraph {
+.hero .all-hero .hero-content .paragraph {
   font-size: 14px;
   font-weight: 400;
   color: #212529;
 }
-.hero .hero-content .hero-btns {
+.hero .all-hero .hero-content .hero-btns {
   max-width: 345px;
   padding: 40px 0;
   justify-content: space-around;
 }
-.hero .hero-content .hero-btns .last-block {
+.hero .all-hero .hero-content .hero-btns .last-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
 }
-.hero .hero-content .hero-btns .last-block .see-how {
+.hero .all-hero .hero-content .hero-btns .last-block .see-how {
   width: 140px;
   max-height: 155px;
   height: 21px;
@@ -126,22 +127,22 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.hero .hero-content .hero-btns .last-block .statistics {
+.hero .all-hero .hero-content .hero-btns .last-block .statistics {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 345px;
   height: fit-content;
 }
-.hero .hero-content .hero-btns .last-block .statistics .no-display {
+.hero .all-hero .hero-content .hero-btns .last-block .statistics .no-display {
   display: none;
 }
 @media only screen {
-  .hero .hero-content .hero-btns .last-block .statistics .no-display {
+  .hero .all-hero .hero-content .hero-btns .last-block .statistics .no-display {
     max-width: 375px;
   }
 }
-.hero .hero-content .hero-btns .last-block .statistics .customers, .hero .hero-content .hero-btns .last-block .statistics .garden {
+.hero .all-hero .hero-content .hero-btns .last-block .statistics .customers, .hero .all-hero .hero-content .hero-btns .last-block .statistics .garden {
   width: 135px;
   height: 32px;
   background-color: #CBE5CE;
@@ -150,7 +151,7 @@ body {
   border-radius: 25px;
   padding: 10px;
 }
-.hero .hero-content .hero-btns .last-block .statistics .customers .number, .hero .hero-content .hero-btns .last-block .statistics .garden .number {
+.hero .all-hero .hero-content .hero-btns .last-block .statistics .customers .number, .hero .all-hero .hero-content .hero-btns .last-block .statistics .garden .number {
   width: 29px;
   height: 16px;
   font-family: Nunito;
@@ -158,7 +159,7 @@ body {
   font-weight: 700;
   line-height: 16px;
 }
-.hero .hero-content .hero-btns .last-block .statistics .customers .name, .hero .hero-content .hero-btns .last-block .statistics .garden .name {
+.hero .all-hero .hero-content .hero-btns .last-block .statistics .customers .name, .hero .all-hero .hero-content .hero-btns .last-block .statistics .garden .name {
   max-width: 81px;
   height: 14px;
   font-family: Nunito;
@@ -262,9 +263,19 @@ body {
   }
 }
 @media (min-width: 1200px) {
-  .hero .hero-img {
+  .hero .all-hero {
+    max-width: 100%;
+    max-height: fit-content;
+    display: flex;
+  }
+  .hero .all-hero .hero-img {
     max-width: 1013px;
     height: 673px;
     background-image: url(images/hero-block\ img\ desktop.png);
+  }
+  .hero .all-hero .hero-content {
+    max-width: 690px;
+    max-height: 480px;
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -96,6 +96,9 @@ header {
     }
 }
 
+.all-hero {
+    max-width: 100%;
+
 .hero-img {
     max-width: 375px;
     height: 240px;
@@ -201,6 +204,7 @@ header {
     }
         }
     }
+}
 }
 // }
 
@@ -312,10 +316,22 @@ header {
         }
 }
 
-.hero-img {
+.all-hero {
+    max-width: 100%;
+    max-height: fit-content;
+    display: flex;
+    
+    .hero-img {
     max-width: 1013px;
     height: 673px;
-    background-image: url(images/hero-block\ img\ desktop.png);
+    background-image: url(images/hero-block\ img\ desktop.png); }
+    
+    .hero-content {
+    max-width: 690px;
+    max-height: 480px;
+    // max-height: fit-content;
+    padding: 0;    
+    }
 }
 }
 }
