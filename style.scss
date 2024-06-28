@@ -9,12 +9,12 @@ body {
 }
 
 
-// mobile (max-width: 375px)
+// MOBILE (max-width: 375px)
 
 .hero {
     max-width: 375px;
-    max-height: fit-content;
-    // max-height: 720px;
+    // max-height: fit-content;
+    max-height: 812px;
     background-image: url(images/hero-block\ BG\ mob.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,15 +98,27 @@ header {
 
 .all-hero {
     max-width: 100%;
+    // height: 100%;
 
 .hero-img {
     max-width: 375px;
     height: 240px;
-    background-image: url(images/hero-block\ img\ mob.png);
+
+    .hero-img-mob {
+        max-width: 375px;
+    }
+
+    .hero-img-desktop {
+        display: none;
+        @media screen {
+            max-width: 375px;
+        }
+    }
+    // background-image: url(images/hero-block\ img\ mob.png);
 }
 
 .hero-content {
-    max-height: 420px;
+    max-height: 687px;
     font-family: Nunito;
     padding: 45px 15px;
 
@@ -129,35 +141,53 @@ header {
     }
 
     .hero-btns {
-        max-width: 345px;
-        // max-height: 155px;
-        padding: 40px 0;
+        width: 345px;
+        height: 85px;
+        margin: 40px 0;
         justify-content: space-around;
+        display: flex;
+        flex-direction: column;
 
-        .last-block {
+        .main-btns {
+            width: 345px;
+            // height: 85px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 20px;
-            // justify-content: space-around;    
+            justify-content: space-around;
 
-        .see-how {
-            width: 140px;
-            max-height: 155px;
-            height: 21px;
-            padding-bottom: 40px;
-            font-size: 14px;
-            font-weight: 600;
-            color: $main1green;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            // img {
-            //     max-width: 16px;
-            //     max-height: 13px;
+            .green-btn {
+                width: 300px;
+                height: 45px;
+                border-radius: 5px;
+                background-color: $main1green;
+                color: $iconColor-white;
+                text-align: center;
+                align-content: center;
             }
 
+            .see-how {
+                width: 140px;
+                // max-height: 155px;
+                height: 21px;
+                margin-top: 20px;
+                font-size: 14px;
+                font-weight: 600;
+                color: $main1green;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }  
+    }
+
+    .last-block {
+        height: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        
         .statistics {
             display: flex;
             flex-direction: row;
@@ -165,108 +195,106 @@ header {
             // max-width: fit-content;
             width: 345px;
             height: fit-content;
-
-            .no-display {
+        
+            .team {
                 display: none;
                 @media only screen {
                     max-width: 375px;
-                }  
                 }
+            }
 
-            .customers, .garden {
-                width: 135px;
-                height: 32px;
-                background-color: #CBE5CE;
-                display: flex;
-                justify-content: space-between;
-                border-radius: 25px;
-                padding: 10px;
+        .customers, .garden {
+            width: 135px;
+            height: 32px;
+            background-color: #CBE5CE;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 25px;
+            padding: 10px;
 
-                .number {
-                    width: 29px;
-                    height: 16px;
-                    font-family: Nunito;
-                    font-size: 12px;
-                    font-weight: 700;
-                    line-height: 16px;
-                }
+            .number {
+                width: 29px;
+                height: 16px;
+                font-family: Nunito;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 16px;
+            }
 
-                .name {
-                    max-width: 81px;
-                    height: 14px;
-                    font-family: Nunito;
-                    font-size: 10px;
-                    font-weight: 400;
-                    line-height: 14px;
-                }
+            .name {
+                max-width: 81px;
+                height: 14px;
+                font-family: Nunito;
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 14px;
             }
         }
     }
+}
         }
     }
 }
-}
+
 // }
 
-// desktop
+// DESKTOP
+
 @media (min-width: 1200px) {
     .hero {
-        max-width: 100%;
-        // max-height: 860px;
-        max-height: fit-content;
+        max-width: 1920px;
+        max-height: 863px;
         background-image: url(images/hero-block\ BG\ desktop.png);
         background-size: cover;
         background-repeat: no-repeat;
-
-    header {
+    
+        header {
         max-width: 100%;
 
-    .no-display {
-        display:block;
-        
-        @media only screen {
-            max-width: 375px;
+        .no-display {
+            display:block;
+            @media only screen {
+                max-width: 375px;
+            }
         }
-    }
-
         .green-header {
-
-        .content {
-            max-width: 1420px;
-            justify-content: space-around;
-            margin: 0 auto;
-    
-            .green-wrap {
-            justify-content: space-around;
-            margin: 0 auto;
-    
-            .contacts {
-                width: 740px;
-                color: $iconColor-white;
-                font-size: 14px;
-
-                img {padding-right: 10px;}
-
-                .email {
-                    width: 281px;
-                    display: inline-flex;
-                }
-                .phone {
-                    width: 130px;
-                    display: inline-flex;
-                }
-                .location {
-                    width: 268px;
-                    display: inline-flex;
+            
+            .content {
+                max-width: 1420px;
+                justify-content: space-around;
+                margin: 0 auto;
+            
+                .green-wrap {
+                    justify-content: space-around;
+                    margin: 0 auto;
+            
+                    .contacts {
+                        width: 740px;
+                        color: $iconColor-white;
+                        font-size: 14px;
+                
+                        img {padding-right: 10px;}
+                
+                        .email {
+                            width: 281px;
+                            display: inline-flex;
+                        }
+                        .phone {
+                            width: 130px;
+                            display: inline-flex;
+                        }
+                        .location {
+                            width: 268px;
+                            display: inline-flex;
+                        }
+                    }
                 }
             }
-            }
-        }
         }
     
         .white-header {
-
-          .content {
+        
+        .content {
             max-width: 1420px;
             justify-content: space-around;
             margin: 0 auto;
@@ -274,8 +302,8 @@ header {
             .white-wrap {
             display: flex;
             justify-content: space-around;
-            
-          .navigation {
+          
+            .navigation {
                 width: 625px;
                 padding-right: 100px;
                 display: flex;
@@ -284,54 +312,151 @@ header {
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 20px;
-        }
-
-        .call-and-menu {
+            }
+            
+            .call-and-menu {
             color: $iconColor-white;
-
+            
             .call {
-            width: 170px;
-            height: 35px;
-            border-radius: 5px;
-            display: inline-flex;
-            justify-content: center;
-            flex-direction: row;
-            align-items: center;
-            font-size: 18px;
-
-            .no-display {
-                padding-left: 10px;
+                width: 170px;
+                height: 35px;
+                border-radius: 5px;
+                display: inline-flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                font-size: 18px;
+            
+                .no-display {
+                    padding-left: 10px;
+                }
             }
-            }
-
+            
             .menu-hidden {
                 display: none;
                 @media only screen {
                     min-width: 376px;
                 }
             }
+            }
+            }
         }
-    }
-          }
         }
-}
+        }
 
-.all-hero {
-    max-width: 100%;
-    max-height: fit-content;
-    display: flex;
+        .all-hero {
+            max-width: 1920px;
+            max-height: 720px;
+            display: flex;
+            flex-direction: row-reverse;
     
-    .hero-img {
-    max-width: 1013px;
-    height: 673px;
-    background-image: url(images/hero-block\ img\ desktop.png); }
+            .hero-img {
+                max-width: 1013px;
+                max-height: 673px;
     
-    .hero-content {
-    max-width: 690px;
-    max-height: 480px;
-    // max-height: fit-content;
-    padding: 0;    
+                .hero-img-mob {
+                    display: none;
+                    @media screen {
+                        max-width: 375px;
+                    }
+                }
+            
+                .hero-img-desktop {
+                    display: block;
+                    max-width: 1013px;
+                    max-height: 673px;
+                    margin-top: 45px;
+                }
+            }
+                
+            .hero-content {
+                width: 690px;
+                // height: 386px;
+                max-height: fit-content;
+                margin: 133px 0 100px 255px;
+
+                .sub-header {
+                    width: 242px;
+                    height: 20px;
+                    font-family: Nunito;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                .header {
+                    font-family: Nunito;
+                    font-size: 58px;
+                    font-weight: 800;
+                }
+
+                .paragraph {
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-align: left;
+                }
+
+                .hero-btns {
+                    width: 100%;
+                    height: 50px;
+                    margin-bottom: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+
+                    .main-btns {
+                        width: 355px;
+                        height: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        .green-btn {
+                            width: 175px;
+                            height: 50px;
+                        }
+                    }
+                }
+
+                .last-block {
+                    margin-bottom: 100px;
+
+                    .statistics{
+                    width: 467px;
+                    height: 50px;
+                    margin-bottom: 100px;
+                    display: flex;
+
+                    .customers, .garden, .team {
+                        width: 135px;
+                        height: 32px;
+                        background-color: #CBE5CE;
+                        display: flex;
+                        justify-content: space-between;
+                        border-radius: 25px;
+                        padding: 10px;
+            
+                        .number {
+                            width: 29px;
+                            height: 16px;
+                            font-family: Nunito;
+                            font-size: 12px;
+                            font-weight: 700;
+                            line-height: 16px;
+                        }
+            
+                        .name {
+                            max-width: 81px;
+                            height: 14px;
+                            font-family: Nunito;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 14px;
+                        }
+                    }
+
+                    }
+                }
+               }
+            }
+        }
     }
-}
-}
-}

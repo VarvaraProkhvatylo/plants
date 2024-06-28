@@ -8,7 +8,7 @@ body {
 
 .hero {
   max-width: 375px;
-  max-height: fit-content;
+  max-height: 812px;
   background-image: url(images/hero-block\ BG\ mob.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -82,10 +82,20 @@ body {
 .hero .all-hero .hero-img {
   max-width: 375px;
   height: 240px;
-  background-image: url(images/hero-block\ img\ mob.png);
+}
+.hero .all-hero .hero-img .hero-img-mob {
+  max-width: 375px;
+}
+.hero .all-hero .hero-img .hero-img-desktop {
+  display: none;
+}
+@media screen {
+  .hero .all-hero .hero-img .hero-img-desktop {
+    max-width: 375px;
+  }
 }
 .hero .all-hero .hero-content {
-  max-height: 420px;
+  max-height: 687px;
   font-family: Nunito;
   padding: 45px 15px;
 }
@@ -105,21 +115,33 @@ body {
   color: #212529;
 }
 .hero .all-hero .hero-content .hero-btns {
-  max-width: 345px;
-  padding: 40px 0;
+  width: 345px;
+  height: 85px;
+  margin: 40px 0;
   justify-content: space-around;
+  display: flex;
+  flex-direction: column;
 }
-.hero .all-hero .hero-content .hero-btns .last-block {
+.hero .all-hero .hero-content .hero-btns .main-btns {
+  width: 345px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  justify-content: space-around;
 }
-.hero .all-hero .hero-content .hero-btns .last-block .see-how {
+.hero .all-hero .hero-content .hero-btns .main-btns .green-btn {
+  width: 300px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #00730C;
+  color: #fff;
+  text-align: center;
+  align-content: center;
+}
+.hero .all-hero .hero-content .hero-btns .main-btns .see-how {
   width: 140px;
-  max-height: 155px;
   height: 21px;
-  padding-bottom: 40px;
+  margin-top: 20px;
   font-size: 14px;
   font-weight: 600;
   color: #00730C;
@@ -127,22 +149,29 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.hero .all-hero .hero-content .hero-btns .last-block .statistics {
+.hero .all-hero .hero-content .last-block {
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.hero .all-hero .hero-content .last-block .statistics {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 345px;
   height: fit-content;
 }
-.hero .all-hero .hero-content .hero-btns .last-block .statistics .no-display {
+.hero .all-hero .hero-content .last-block .statistics .team {
   display: none;
 }
 @media only screen {
-  .hero .all-hero .hero-content .hero-btns .last-block .statistics .no-display {
+  .hero .all-hero .hero-content .last-block .statistics .team {
     max-width: 375px;
   }
 }
-.hero .all-hero .hero-content .hero-btns .last-block .statistics .customers, .hero .all-hero .hero-content .hero-btns .last-block .statistics .garden {
+.hero .all-hero .hero-content .last-block .statistics .customers, .hero .all-hero .hero-content .last-block .statistics .garden {
   width: 135px;
   height: 32px;
   background-color: #CBE5CE;
@@ -151,7 +180,7 @@ body {
   border-radius: 25px;
   padding: 10px;
 }
-.hero .all-hero .hero-content .hero-btns .last-block .statistics .customers .number, .hero .all-hero .hero-content .hero-btns .last-block .statistics .garden .number {
+.hero .all-hero .hero-content .last-block .statistics .customers .number, .hero .all-hero .hero-content .last-block .statistics .garden .number {
   width: 29px;
   height: 16px;
   font-family: Nunito;
@@ -159,7 +188,7 @@ body {
   font-weight: 700;
   line-height: 16px;
 }
-.hero .all-hero .hero-content .hero-btns .last-block .statistics .customers .name, .hero .all-hero .hero-content .hero-btns .last-block .statistics .garden .name {
+.hero .all-hero .hero-content .last-block .statistics .customers .name, .hero .all-hero .hero-content .last-block .statistics .garden .name {
   max-width: 81px;
   height: 14px;
   font-family: Nunito;
@@ -170,8 +199,8 @@ body {
 
 @media (min-width: 1200px) {
   .hero {
-    max-width: 100%;
-    max-height: fit-content;
+    max-width: 1920px;
+    max-height: 863px;
     background-image: url(images/hero-block\ BG\ desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -264,18 +293,105 @@ body {
 }
 @media (min-width: 1200px) {
   .hero .all-hero {
-    max-width: 100%;
-    max-height: fit-content;
+    max-width: 1920px;
+    max-height: 720px;
     display: flex;
+    flex-direction: row-reverse;
   }
   .hero .all-hero .hero-img {
     max-width: 1013px;
-    height: 673px;
-    background-image: url(images/hero-block\ img\ desktop.png);
+    max-height: 673px;
+  }
+  .hero .all-hero .hero-img .hero-img-mob {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero .all-hero .hero-img .hero-img-mob {
+    max-width: 375px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .all-hero .hero-img .hero-img-desktop {
+    display: block;
+    max-width: 1013px;
+    max-height: 673px;
+    margin-top: 45px;
   }
   .hero .all-hero .hero-content {
-    max-width: 690px;
-    max-height: 480px;
-    padding: 0;
+    width: 690px;
+    max-height: fit-content;
+    margin: 133px 0 100px 255px;
+  }
+  .hero .all-hero .hero-content .sub-header {
+    width: 242px;
+    height: 20px;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .hero .all-hero .hero-content .header {
+    font-family: Nunito;
+    font-size: 58px;
+    font-weight: 800;
+  }
+  .hero .all-hero .hero-content .paragraph {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .hero .all-hero .hero-content .hero-btns {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .hero .all-hero .hero-content .hero-btns .main-btns {
+    width: 355px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero .all-hero .hero-content .hero-btns .main-btns .green-btn {
+    width: 175px;
+    height: 50px;
+  }
+  .hero .all-hero .hero-content .last-block {
+    margin-bottom: 100px;
+  }
+  .hero .all-hero .hero-content .last-block .statistics {
+    width: 467px;
+    height: 50px;
+    margin-bottom: 100px;
+    display: flex;
+  }
+  .hero .all-hero .hero-content .last-block .statistics .customers, .hero .all-hero .hero-content .last-block .statistics .garden, .hero .all-hero .hero-content .last-block .statistics .team {
+    width: 135px;
+    height: 32px;
+    background-color: #CBE5CE;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding: 10px;
+  }
+  .hero .all-hero .hero-content .last-block .statistics .customers .number, .hero .all-hero .hero-content .last-block .statistics .garden .number, .hero .all-hero .hero-content .last-block .statistics .team .number {
+    width: 29px;
+    height: 16px;
+    font-family: Nunito;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+  .hero .all-hero .hero-content .last-block .statistics .customers .name, .hero .all-hero .hero-content .last-block .statistics .garden .name, .hero .all-hero .hero-content .last-block .statistics .team .name {
+    max-width: 81px;
+    height: 14px;
+    font-family: Nunito;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
