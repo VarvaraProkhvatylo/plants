@@ -240,6 +240,7 @@ main {
     margin: 0;
     padding-left: 15px;
     padding-right: 15px;
+    max-width: 375px;
 
     .services {
         padding-top: 50px;
@@ -275,21 +276,49 @@ main {
 
         .cards {
             max-width: 345px;
-            max-height: 1068px;
+            height: 1068px;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
 
             .cards-row{
                 display: flex;
                 flex-direction: column;
 
                 .card {
-                    max-width: 345px;
+                    width: 345px;
                     height: 116px;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-                    .card-image {}
+                    .card-image {
+                        width: 50px;
+                        height: 50px;
+                        padding-top: 13px;
+                    }
 
-                    .card-header {}
+                    .card-text {
+                        width: 235px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        
+                        .card-header {
+                            width: 235px;
+                            font-family: Nunito;
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
 
-                    .card-text {}
+                        .card-paragraph {
+                            width: 235px;
+                            font-family: Nunito;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
                 }
             }
         }
@@ -521,6 +550,7 @@ main {
         }
 
     main {
+        max-width: 1920px;
         margin: 0;
         padding-left: 255px;
         padding-right: 255px;
@@ -554,20 +584,55 @@ main {
             .cards {
                 max-width: 1410px;
                 max-height: 762px;
+                display: flex;
 
                 .cards-row {
+                    max-width: 1410px;
                     display: flex;
                     flex-direction: row;
+                    justify-content: space-between;
 
                     .card {
                       width: 330px;
                       height: 366px;
+                      display: flex;
+                      flex-direction: column;
+                      padding: 59px 43px;
+                      box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
                     
-                      .card-image {}
-                    
-                      .card-header {}
-                    
-                      .card-text {}
+                      .card-image {
+                        width: 70px;
+                        height: 70px;
+                        align-items: center;
+
+                        img {
+                            width: 70px;
+                            height: 70px;  
+                        }
+                      }
+                      
+                      .card-text {
+                        width: 245px;
+                        height: 127px;
+
+                        .card-header {
+                            width: 245px;
+                            text-align: center;
+                            font-family: Nunito;
+                            font-size: 24px;
+                            font-weight: 700;
+
+                        }
+                        .card-paragraph {
+                            width: 245px;
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $typography-grey;
+
+                        }
+                    }
                     }
                 } 
             }
