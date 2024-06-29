@@ -556,7 +556,7 @@ main {
         padding-right: 255px;
 
         .services {
-            padding-top: 100px;
+            padding-top: 50px;
             max-width: 1410px;
             max-height: 963px;
         
@@ -567,7 +567,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                margin-bottom: 50px;
+                margin: 50px auto;
         
                 .header {
                     font-family: Nunito;

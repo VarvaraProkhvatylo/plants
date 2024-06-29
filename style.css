@@ -475,7 +475,7 @@ main .services .cards .cards-row .card .card-text .card-paragraph {
     padding-right: 255px;
   }
   main .services {
-    padding-top: 100px;
+    padding-top: 50px;
     max-width: 1410px;
     max-height: 963px;
   }
@@ -486,7 +486,7 @@ main .services .cards .cards-row .card .card-text .card-paragraph {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin: 50px auto;
   }
   main .services .main-intro .header {
     font-family: Nunito;
