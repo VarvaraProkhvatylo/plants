@@ -236,6 +236,66 @@ header {
     }
 }
 
+main {
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .services {
+        padding-top: 50px;
+        max-width: 375px;
+        // width: 375px;
+        max-height: 1260px;
+    
+        .main-intro {
+            max-width: 344px;
+            height: 163px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        
+            .header {
+                font-family: Nunito;
+                font-size: 28px;
+                font-weight: 700;
+                // margin-bottom: 15px;
+            }
+
+            .description {
+                max-width: 344px;
+                // height: 110px;
+                height: fit-content;
+                font-family: Nunito;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+
+        .cards {
+            max-width: 345px;
+            max-height: 1068px;
+
+            .cards-row{
+                display: flex;
+                flex-direction: column;
+
+                .card {
+                    max-width: 345px;
+                    height: 116px;
+
+                    .card-image {}
+
+                    .card-header {}
+
+                    .card-text {}
+                }
+            }
+        }
+    }
+}
+
 // }
 
 // DESKTOP
@@ -420,7 +480,7 @@ header {
                 .last-block {
                     margin-bottom: 100px;
 
-                    .statistics{
+                    .statistics {
                     width: 467px;
                     height: 50px;
                     margin-bottom: 100px;
@@ -459,4 +519,58 @@ header {
                }
             }
         }
+
+    main {
+        margin: 0;
+        padding-left: 255px;
+        padding-right: 255px;
+
+        .services {
+            padding-top: 100px;
+            max-width: 1410px;
+            max-height: 963px;
+        
+            .main-intro {
+                max-width: 1136px;
+                height: 150px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 50px;
+        
+                .header {
+                    font-family: Nunito;
+                    font-size: 45px;
+                    font-weight: 800;
+                }
+        
+                .description {
+                    max-width: 1136px;
+                    height: fit-content;
+                }
+            }
+
+            .cards {
+                max-width: 1410px;
+                max-height: 762px;
+
+                .cards-row {
+                    display: flex;
+                    flex-direction: row;
+
+                    .card {
+                      width: 330px;
+                      height: 366px;
+                    
+                      .card-image {}
+                    
+                      .card-header {}
+                    
+                      .card-text {}
+                    }
+                } 
+            }
+        }
     }
+}

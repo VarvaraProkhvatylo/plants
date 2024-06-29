@@ -197,6 +197,49 @@ body {
   line-height: 14px;
 }
 
+main {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+main .services {
+  padding-top: 50px;
+  max-width: 375px;
+  max-height: 1260px;
+}
+main .services .main-intro {
+  max-width: 344px;
+  height: 163px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+main .services .main-intro .header {
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: 700;
+}
+main .services .main-intro .description {
+  max-width: 344px;
+  height: fit-content;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 400;
+}
+main .services .cards {
+  max-width: 345px;
+  max-height: 1068px;
+}
+main .services .cards .cards-row {
+  display: flex;
+  flex-direction: column;
+}
+main .services .cards .cards-row .card {
+  max-width: 345px;
+  height: 116px;
+}
 @media (min-width: 1200px) {
   .hero {
     max-width: 1920px;
@@ -393,5 +436,45 @@ body {
     font-size: 10px;
     font-weight: 400;
     line-height: 14px;
+  }
+  main {
+    margin: 0;
+    padding-left: 255px;
+    padding-right: 255px;
+  }
+  main .services {
+    padding-top: 100px;
+    max-width: 1410px;
+    max-height: 963px;
+  }
+  main .services .main-intro {
+    max-width: 1136px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  main .services .main-intro .header {
+    font-family: Nunito;
+    font-size: 45px;
+    font-weight: 800;
+  }
+  main .services .main-intro .description {
+    max-width: 1136px;
+    height: fit-content;
+  }
+  main .services .cards {
+    max-width: 1410px;
+    max-height: 762px;
+  }
+  main .services .cards .cards-row {
+    display: flex;
+    flex-direction: row;
+  }
+  main .services .cards .cards-row .card {
+    width: 330px;
+    height: 366px;
   }
 }/*# sourceMappingURL=style.css.map */
