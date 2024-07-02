@@ -96,7 +96,7 @@ body {
 }
 .hero .all-hero .hero-content {
   max-height: 687px;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   padding: 45px 15px;
 }
 .hero .all-hero .hero-content .sub-header {
@@ -183,7 +183,7 @@ body {
 .hero .all-hero .hero-content .last-block .statistics .customers .number, .hero .all-hero .hero-content .last-block .statistics .garden .number {
   width: 29px;
   height: 16px;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
@@ -191,7 +191,7 @@ body {
 .hero .all-hero .hero-content .last-block .statistics .customers .name, .hero .all-hero .hero-content .last-block .statistics .garden .name {
   max-width: 81px;
   height: 14px;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
@@ -199,12 +199,12 @@ body {
 
 main {
   margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
   max-width: 375px;
 }
 main .services {
   padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   max-width: 375px;
   max-height: fit-content;
   margin-bottom: 50px;
@@ -219,14 +219,14 @@ main .services .main-intro {
   margin-bottom: 30px;
 }
 main .services .main-intro .header {
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   font-size: 28px;
   font-weight: 700;
 }
 main .services .main-intro .description {
   max-width: 344px;
   height: fit-content;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -263,18 +263,21 @@ main .services .cards .cards-row .card .card-text {
 }
 main .services .cards .cards-row .card .card-text .card-header {
   width: 235px;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
 }
 main .services .cards .cards-row .card .card-text .card-paragraph {
   width: 235px;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 main .experience {
   max-width: 375px;
+  height: 1231px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 main .experience .mob-images {
   width: 345px;
@@ -324,7 +327,7 @@ main .experience .description {
 main .experience .description .header {
   width: 345px;
   height: fit-content;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   font-size: 28px;
   font-weight: 700;
   text-align: center;
@@ -335,7 +338,7 @@ main .experience .description .paragraph {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #676767;
@@ -381,7 +384,7 @@ main .experience .description .tiles .row .tile .desk-images {
   display: none;
 }
 main .experience .description .tiles .row .tile .tile-name {
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   font-weight: 700;
 }
@@ -397,9 +400,65 @@ main .experience .description .btn button {
   border: none;
   border-radius: 5px;
   background-color: #00730C;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
+  color: #fff;
+}
+main .why-choose-us {
+  max-width: 375px;
+  height: 685px;
+  background-image: url(images/BG-mob.png);
+  padding: 50px 15px;
+}
+main .why-choose-us .content {
+  max-width: 345px;
+  height: 585px;
+  display: flex;
+  flex-direction: column;
+}
+main .why-choose-us .content .mob-images {
+  max-width: 345px;
+  height: 217px;
+}
+@media only screen {
+  main .why-choose-us .content .mob-images {
+    max-width: 375px;
+  }
+}
+@media only screen {
+  main .why-choose-us .content .desk-images {
+    min-width: 376px;
+    display: none;
+  }
+}
+main .why-choose-us .content .main-content {
+  height: 337px;
+}
+main .why-choose-us .content .main-content .text {
+  max-width: 345px;
+  height: 163px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .why-choose-us .content .main-content .text .header {
+  max-width: 345px;
+  height: 38px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+main .why-choose-us .content .main-content .text .paragraph {
+  max-width: 345px;
+  height: 110px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -532,17 +591,17 @@ main .experience .description .btn button {
   .hero .all-hero .hero-content .sub-header {
     width: 242px;
     height: 20px;
-    font-family: Nunito;
+    font-family: "Nunito", sans-serif;
     font-size: 16px;
     font-weight: 700;
   }
   .hero .all-hero .hero-content .header {
-    font-family: Nunito;
+    font-family: "Nunito", sans-serif;
     font-size: 58px;
     font-weight: 800;
   }
   .hero .all-hero .hero-content .paragraph {
-    font-family: Nunito;
+    font-family: "Nunito", sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-align: left;
@@ -587,28 +646,30 @@ main .experience .description .btn button {
   .hero .all-hero .hero-content .last-block .statistics .customers .number, .hero .all-hero .hero-content .last-block .statistics .garden .number, .hero .all-hero .hero-content .last-block .statistics .team .number {
     width: 29px;
     height: 16px;
-    font-family: Nunito;
+    font-family: "Nunito", sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
+    color: #212529;
   }
   .hero .all-hero .hero-content .last-block .statistics .customers .name, .hero .all-hero .hero-content .last-block .statistics .garden .name, .hero .all-hero .hero-content .last-block .statistics .team .name {
     max-width: 81px;
     height: 14px;
-    font-family: Nunito;
+    font-family: "Nunito", sans-serif;
     font-size: 10px;
     font-weight: 400;
     line-height: 14px;
+    color: #212529;
   }
   main {
     max-width: 1920px;
     margin: 0;
-    padding-left: 255px;
-    padding-right: 255px;
   }
   main .services {
     padding-top: 50px;
-    max-width: 1410px;
+    padding-left: 255px;
+    padding-right: 255px;
+    max-width: 1920px;
     max-height: fit-content;
     margin-bottom: 100px;
   }
@@ -665,20 +726,23 @@ main .experience .description .btn button {
   main .services .cards .cards-row .card .card-text .card-header {
     width: 245px;
     text-align: center;
-    font-family: Nunito;
+    font-family: "Nunito", sans-serif;
     font-size: 24px;
     font-weight: 700;
   }
   main .services .cards .cards-row .card .card-text .card-paragraph {
     width: 245px;
     text-align: center;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #676767;
   }
   main .experience {
     max-width: 1920px;
+    max-height: 903px;
+    padding-left: 255px;
+    padding-right: 255px;
     display: flex;
   }
 }
@@ -739,7 +803,7 @@ main .experience .description .btn button {
     width: 672px;
     height: 280px;
     margin-top: 30px;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
     text-align: left;
@@ -790,7 +854,7 @@ main .experience .description .btn button {
     margin-right: 30px;
   }
   main .experience .description .text .tiles .row .tile .tile-name {
-    font-family: Nunito;
+    font-family: "Nunito", sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: #676767;
@@ -803,9 +867,70 @@ main .experience .description .btn button {
     height: 50px;
     margin-top: 50px;
     text-align: center;
-    font-family: Nunito;
+    font-family: "Nunito", sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
+  }
+}
+@media (min-width: 1200px) {
+  main .why-choose-us {
+    max-width: 1920px;
+    max-height: 655px;
+    background-image: url(images/BG-desktop.png);
+    padding: 100px 255px;
+  }
+  main .why-choose-us .content {
+    max-width: 1410px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main .why-choose-us .content .mob-images {
+    max-width: 375px;
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  main .why-choose-us .content .desk-images {
+    max-width: 672px;
+    max-height: 426px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main .why-choose-us .content .desk-images {
+    display: block;
+    max-width: 693px;
+  }
+}
+@media (min-width: 1200px) {
+  main .why-choose-us .content .main-content {
+    max-width: 656px;
+    height: 455px;
+  }
+  main .why-choose-us .content .main-content .text {
+    max-width: 656px;
+    height: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .why-choose-us .content .main-content .text .header {
+    max-width: 656px;
+    height: 60px;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  main .why-choose-us .content .main-content .text .paragraph {
+    max-width: 656px;
+    height: 120px;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
   }
 }/*# sourceMappingURL=style.css.map */
