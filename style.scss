@@ -464,7 +464,6 @@ main {
                     width: 167px;
                     height: 40px;
                     margin-top: 30px;
-                    // padding: 10px 30px;
                     text-align: center;
                     border: none;
                     border-radius: 5px;
@@ -481,7 +480,7 @@ main {
     .why-choose-us {
         max-width: 375px;
         height: 685px;
-        background-image: url(images/BG-mob.png);
+        background-image: url(images/why-choose-us-images/BG-mob.png);
         padding: 50px 15px;
 
         .content {
@@ -509,15 +508,15 @@ main {
                 
                 .text {
                     max-width: 345px;
-                    height: 163px;
+                    height: 337px;
                     margin-top: 30px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
                 
                     .header {
                         max-width: 345px;
                         height: 38px;
+                        margin-bottom: 15px;
                         text-align: center;
                         font-family: "Nunito", sans-serif;
                         font-size: 28px;
@@ -527,11 +526,71 @@ main {
                     .paragraph {
                         max-width: 345px;
                         height: 110px;
+                        margin-bottom: 40px;
                         text-align: center;
                         font-family: "Nunito", sans-serif;
                         font-size: 14px;
                         font-weight: 400;
                         color: $iconColor-white;
+                    }
+                    .checked {
+                        max-width: 345px;
+                        height: 64px;
+                        margin-bottom: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .check-row {
+                            width: 345px;
+                            height: 22px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .check-block {
+                                width: 172px;
+                                max-height: 22px;
+                                display: flex;
+
+                                .check-mob-img {
+                                    @media only screen {
+                                    max-width: 375px;
+                                }
+                                    width: 22px;
+                                    height: 22px;
+                                    margin-right: 10px;
+                                }
+                                .check-desk-img {
+                                    display: none;
+                                }
+                            }
+
+                            .check-name {
+                                font-family: "Nunito", sans-serif;
+                                font-size: 16px;
+                                font-weight: 700;
+                                text-align: left;
+                                color: $iconColor-white;
+                            }
+                        }
+                    }
+
+                    .btn {
+                        width: 166px;
+                        margin: 0 auto;
+
+                        button {
+                            width: 166px;
+                            height: 40px;
+                            text-align: center;
+                            border: none;
+                            border-radius: 5px;
+                            background-color: $main1green;
+                            font-family: "Nunito", sans-serif;
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: $iconColor-white;
+                        }
                     }
                 }
             }
@@ -1005,7 +1064,7 @@ main {
         .why-choose-us {
             max-width: 1920px;
             max-height: 655px;
-            background-image: url(images/BG-desktop.png);
+            background-image: url(images/why-choose-us-images/BG-desktop.png);
             padding: 100px 255px;
             
             .content {
@@ -1024,7 +1083,8 @@ main {
                 .desk-images {
                      @media only screen {
                         display: block;
-                        max-width: 693px;
+                        max-width: 672px;
+                        margin-top: 15px;
                     }
                     max-width: 672px;
                     max-height: 426px;
@@ -1036,14 +1096,16 @@ main {
                     
                     .text {
                         max-width: 656px;
-                        height: 211px;
+                        height: 455px;
+                        margin-top: 0;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
+                        // justify-content: space-between;
                    
                         .header {
                             max-width: 656px;
                             height: 60px;
+                            margin-bottom: 30px;
                             text-align: left;
                             font-family: "Nunito", sans-serif;
                             font-size: 45px;
@@ -1053,10 +1115,60 @@ main {
                         .paragraph {
                             max-width: 656px;
                             height: 120px;
+                            margin-bottom: 50px;
                             text-align: left;
                             font-family: "Nunito", sans-serif;
                             font-size: 18px;
                             font-weight: 400;
+                        }
+                        
+                        .checked {
+                            max-width: 600px;
+                            height: 86px;
+                            margin-bottom: 50px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .check-row {
+                                width: 600px;
+                                height: 33px;
+
+                                .check-block {
+                                    width: 300px;
+                                    height: 33px;
+
+                                    .check-mob-img {
+                                        display: none;
+                                    }
+                                    .check-desk-img {
+                                        @media only screen {
+                                            display: block;
+                                            max-width: 30px;
+                                            height: 30px;
+                                            margin-right: 20px;
+                                        }
+                                    }
+                                    .check-name {
+                                        font-family: "Nunito", sans-serif;
+                                        font-size: 24px;
+                                        font-weight: 700;
+                                        text-align: left;
+                                        color: $iconColor-white;
+
+                                    }
+                                }
+
+                            }
+                        }
+                        .btn {
+                            max-width: 600px;
+                            height: 58px;
+                            margin: 0 0;
+
+                            button {
+                                width: 190px;
+                                height: 50px;
+                            }
                         }
                     }
                 }
