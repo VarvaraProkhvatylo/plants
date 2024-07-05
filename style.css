@@ -1232,4 +1232,7 @@ main .working-process .tiles .tile .content .text .paragraph {
     font-weight: 400;
     color: #676767;
   }
+  main .working-process .cta {
+    max-width: 1920px;
+  }
 }/*# sourceMappingURL=style.css.map */
