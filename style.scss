@@ -666,10 +666,7 @@ main {
                             height: 50px;
                         }
                         .desktop {
-                            @media only screen {
-                                min-width: 376px;
-                                display: none;
-                            }
+                            display: none;
                         }
 
                         .number {
@@ -1329,6 +1326,11 @@ main {
                 max-width: 1410px;
                 height: 408px;
                 display: flex;
+                justify-content: space-between;
+
+                .tile:first-child {
+                    background-color: #00730C;
+                }
 
                 .tile {
                     max-width: 330px;
@@ -1340,6 +1342,61 @@ main {
                     .content {
                         max-width: 270px;
                         height: 288px;
+
+                        .icon {
+                            max-width: 270px;
+                            height: 80px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .mob {
+                            width: 50px;
+                            height: 50px;
+                        
+                            @media only screen {
+                                width: 375px;
+                                display: none;
+                            }
+                        }
+                            .desktop {
+                                display: block;
+                                width: 70px;
+                                height: 70px;
+                            }
+                        }
+
+                        .text {
+                            max-width: 270px;
+                            height: 173px;
+
+                            .header:first-child {
+                                color: $iconColor-white;
+                            }
+                            
+                            .header {
+                                max-width: 270px;
+                                height: 33px;
+                                font-family: "Nunito", sans-serif;
+                                font-size: 24px;
+                                font-weight: 700;
+                                color: $typography-black;
+                            }
+
+                            .paragraph:first-child {
+                                color: $iconColor-white;
+                            }
+
+                            .paragraph {
+                                max-width: 270px;
+                                height: 120px;
+                                font-family: "Nunito", sans-serif;
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: $typography-grey
+                            }
+                            
+                        }
                     }
                 }
             }
