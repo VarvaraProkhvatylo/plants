@@ -431,8 +431,10 @@ main {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);                        
-
+                        
+                        border-radius: 5px;
+                        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+                        
                         .mob-images {
                             max-width: 375px;
                             
@@ -590,6 +592,125 @@ main {
                             font-size: 16px;
                             font-weight: 700;
                             color: $iconColor-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .working-process {
+        max-width: 375px;
+        max-height: 1090px;
+        padding: 50px 15px;
+
+        .intro {
+            max-width: 345px;
+            height: 163px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .header {
+                max-width: 345px;
+                height: 38px;
+
+                font-family: "Nunito", sans-serif;
+                font-size: 28px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .paragraph {
+                max-width: 345px;
+                height: 110px;
+                font-family: "Nunito", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                line-height: 22px;
+            }
+        }
+
+        .tiles {
+            max-width: 345px;
+            height: 897px;
+
+            .tile {
+                max-width: 345px;
+                height: 208px;
+                padding: 20px;
+
+                border-radius: 10px;
+                box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+
+                .content {
+                    max-width: 305px;
+                    height: 168px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .icon {
+                        max-width: 305px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .mob {
+                            @media only screen {
+                                max-width: 375px;
+                            }
+                            width: 50px;
+                            height: 50px;
+                        }
+                        .desktop {
+                            @media only screen {
+                                min-width: 376px;
+                                display: none;
+                            }
+                        }
+
+                        .number {
+                            max-width: 27px;
+                            // height: 50px;
+
+                            font-family: "Nunito", sans-serif;
+                            font-size: 45px;
+                            font-weight: 800;
+                            line-height: 61px;
+                            color: #E3E3E3;
+                        }
+                    }
+
+                    .text {
+                        max-width: 305px;
+                        height: 98px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .header {
+                            max-width: 305px;
+                            height: 22px;
+
+                            font-family: "Nunito", sans-serif;
+                            font-size: 16px;
+                            font-weight: 700;
+                            text-align: left;
+                            color: $typography-black;
+                        }
+
+                        .paragraph {
+                            max-width: 305px;
+                            height: 66px;
+
+                            font-family: "Nunito", sans-serif;
+                            font-size: 14px;
+                            font-weight: 400;
+                            text-align: left;
+                            color: $typography-grey;
                         }
                     }
                 }
@@ -1170,6 +1291,55 @@ main {
                                 height: 50px;
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        .working-process {
+            max-width: 1920px;
+            max-height: 700px;
+            padding-top: 50px;
+            padding-bottom: 0;
+            padding-left: 255px;
+            padding-right: 255px;
+            margin-bottom: 100px;
+
+            .intro {
+                max-width: 1136px;
+                height: 140px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                margin: 50px auto;
+
+                .header {
+                    max-width: 1410px;
+                    height: 60px;
+                }
+
+                .paragraph {
+                    max-width: 1410px;
+                    height: 60px;
+                }
+            }
+
+            .tiles {
+                max-width: 1410px;
+                height: 408px;
+                display: flex;
+
+                .tile {
+                    max-width: 330px;
+                    height: 408px;
+                    padding: 50px 30px;
+                    border-radius: 10px;
+                    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+
+                    .content {
+                        max-width: 270px;
+                        height: 288px;
                     }
                 }
             }
