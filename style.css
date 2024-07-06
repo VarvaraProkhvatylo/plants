@@ -617,6 +617,77 @@ main .working-process .tiles .tile .content .text .paragraph {
   text-align: left;
   color: #676767;
 }
+main .working-process .cta {
+  max-width: 375px;
+  height: 225px;
+  position: relative;
+  z-index: 10;
+}
+main .working-process .cta .mob {
+  width: 345px;
+  height: 224px;
+}
+@media only screen {
+  main .working-process .cta .mob {
+    max-width: 375px;
+  }
+}
+main .working-process .cta .desk {
+  display: none;
+}
+main .working-process .cta .content {
+  max-width: 272px;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 20;
+  top: 50px;
+  left: 35px;
+}
+main .working-process .cta .content .text {
+  max-width: 272px;
+  height: 54px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #fff;
+}
+main .working-process .cta .content .btn {
+  width: 137px;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+  position: relative;
+}
+main .working-process .cta .content .btn .content {
+  width: 77px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 10px;
+  position: absolute;
+}
+main .working-process .cta .content .btn .content .call {
+  width: 20px;
+  height: 20px;
+}
+main .working-process .cta .content .btn .content .text {
+  width: 47px;
+  height: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #00730C;
+}
 
 @media (min-width: 1200px) {
   .hero {

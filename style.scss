@@ -713,6 +713,86 @@ main {
                 }
             }
         }
+
+        .cta {
+            max-width: 375px;
+            height: 225px;
+            position: relative;
+            z-index: 10;
+
+            .mob {
+                @media only screen {
+                    max-width: 375px;
+                }
+                width: 345px;
+                height: 224px;
+            }
+            .desk {
+                display: none;
+            }
+
+            .content {
+                max-width: 272px;
+                height: 124px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                z-index: 20;
+                top: 50px;
+                left: 35px;
+
+                .text {
+                    max-width: 272px;
+                    height: 54px;
+                    text-align: center;
+
+                    font-family: "Nunito", sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    color: $iconColor-white;
+                }
+
+                .btn {
+                    width: 137px;
+                    height: 40px;
+                    background-color: $iconColor-white;
+                    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+                    border-radius: 5px;
+                    position: relative;
+
+                    .content {
+                        width: 77px;
+                        // width: 137px;
+                        height: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        top: 10px;
+                        position: absolute;
+                        
+                        .call {
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        .text {
+                            width: 47px;
+                            height: 20px;
+
+                            font-family: "Nunito", sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 19px;
+                            color: #00730C;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
